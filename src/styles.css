@@ -1,0 +1,30 @@
+html, body {
+  background-color: rgb(208, 235, 235);
+}
+
+.container {
+  min-height: 85px;
+}
+
+.buscador {
+  background-color: black;
+}
+
+.texto {
+  margin-left: -70px;
+}
+
+.fondo {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  min-height: 400px;
+}
+
+.estados {
+  margin-left: -30%;
+  margin-right: 20%;
+  margin-top: 7%;
+}
+
+.temperaturas {
+  margin-top: 7%;
+}
