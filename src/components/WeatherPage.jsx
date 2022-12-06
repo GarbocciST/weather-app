@@ -1,10 +1,10 @@
-import { WeatherCard } from "./WeatherCard"
+import { WeatherCard } from './WeatherCard';
 
 
-export const WeatherPage = ({weather, isLoading}) => {
+export const WeatherPage = ({weather}) => {
   return (
     <div className="fondo container rounded">
-      <ul className=" d-flex justify-content-around">
+      <ul className="d-flex justify-content-around">
         {
           weather.map( city => (
             <WeatherCard city={city} key={city.id}/>
@@ -15,4 +15,3 @@ export const WeatherPage = ({weather, isLoading}) => {
   )
 }
 
-// src={`../assets/${city.weather[0].main}.png`}

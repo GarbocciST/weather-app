@@ -1,5 +1,5 @@
 import { climaApi } from '../../api';
-import { setLoading, setWeather } from './';
+import { setLoading, setWeather, setFoundCity } from './';
 
 
 
@@ -14,8 +14,9 @@ export const getWeather = (value ) => {
             
 
         } catch (error) {
-            console.log(error)
+            dispatch(setFoundCity());
             throw new Error(`No se puede cargar el clima en ${value}`);
+
         }
     }
 }
